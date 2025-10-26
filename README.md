@@ -1,41 +1,35 @@
 # Arkanoid Game
 
-Proyecto sencillo Arkanoid (HTML/CSS/JS).
+Proyecto sencillo: una versión básica del clásico Arkanoid implementada con HTML, CSS y JavaScript.
 
-Cómo subir este proyecto a GitHub
+## Descripción del proyecto
 
-1. Inicializar repo local (si no está):
+Este repositorio contiene una implementación pequeña y didáctica de Arkanoid. En la versión actual encontrarás:
 
-   ```powershell
-   Set-Location -LiteralPath 'd:\Diseño web\100 PROYECOS JS\02-Arkanoid-Game'
-   git init
-   git add .
-   git commit -m "Initial commit"
-   ```
+- Un área de juego (canvas) donde se renderiza la **pala**, la **pelota** y los **ladrillos**.
+- Mecánica de colisiones entre pelota, paredes, pala y ladrillos.
+- Destrucción de ladrillos y actualización de puntuación.
+- Sistema básico de vidas / reinicio cuando la pelota cae debajo de la pala.
+- Controles por teclado (izquierda / derecha).
+- Estilos sencillos para la interfaz y el lienzo.
 
-2. Crear repositorio en GitHub:
-   - Opción A (recomendada si tienes GitHub CLI):
+Archivos principales incluidos:
 
-     ```powershell
-     gh repo create NOMBRE-DEL-REPO --public --source=. --remote=origin --push
-     ```
+- `index.html` — estructura del juego y carga de scripts/estilos.
+- `css/` (si existe) — estilos del proyecto.
+- `js/` o script(s) — lógica del juego (física, entradas y renderizado).
 
-   - Opción B (manual): crear un nuevo repositorio en https://github.com/new y seguir las indicaciones para enlazar el remoto:
+Si tienes más ficheros (assets, sonidos, niveles), deberían estar en carpetas junto a `index.html`.
 
-     ```powershell
-     git remote add origin https://github.com/TU_USUARIO/NOMBRE-DEL-REPO.git
-     git branch -M main
-     git push -u origin main
-     ```
+## Cómo jugar
 
-3. Notas útiles
-   - Si git falla al commitear por falta de usuario/ email, configura:
+- Usa las flechas izquierda/derecha para mover la pala.
+- Rompe los ladrillos con la pelota. Pierdes una vida si la pelota cae fuera.
+- El objetivo es destruir todos los ladrillos sin perder todas las vidas.
 
-     ```powershell
-     git config --global user.name "Tu Nombre"
-     git config --global user.email "tu@email"
-     ```
 
-   - Puedes cambiar `main` por `master` si tu preferencia o la configuración lo requiere.
+## Estado del proyecto
 
-¡Listo! Una vez hecho push, revisa el repositorio en GitHub.
+Versión: inicial / funcional básica — recomendable para seguir extendiendo (sonidos, múltiples niveles, power-ups, menús y mejoras visuales).
+
+
